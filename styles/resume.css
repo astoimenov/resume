@@ -1,0 +1,119 @@
+html, body, div, span,
+h1, h2, h3, h4, a,
+address, img, ul, li, time {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+h1, h2, h3, h4 {
+  color: #000;
+  font-weight: bold; }
+
+article, main, section {
+  display: block; }
+
+ul {
+  list-style: none; }
+
+.slider {
+  background-color: #e5e9eb;
+  height: 0.7em;
+  margin: 0.5em 0;
+  position: relative; }
+  .slider .progress-bar {
+    animation-duration: 3s;
+    background-color: #008CFF;
+    background-image: url(../images/slider.png);
+    background-size: cover;
+    height: 100%;
+    position: relative; }
+    .slider .progress-bar.progress-80 {
+      animation-name: progress-80;
+      width: 80%; }
+    .slider .progress-bar.progress-90 {
+      animation-name: progress-90;
+      width: 90%; }
+    .slider .progress-bar.progress-100 {
+      animation-name: progress-100;
+      width: 100%; }
+
+/* ANIMATIONS */
+@keyframes progress-80 {
+  0% {
+    width: 0; }
+  100% {
+    width: 80%; } }
+@keyframes progress-90 {
+  0% {
+    width: 0; }
+  100% {
+    width: 90%; } }
+@keyframes progress-100 {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
+body {
+  background-attachment: fixed;
+  background-image: url(../images/patternc.png);
+  font: status-bar;
+  font-size: 16px; }
+
+.row {
+  margin-bottom: 2em; }
+
+main {
+  background-color: #f8f8f8;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  margin: 3em auto;
+  max-width: 60em;
+  padding: 1.5em 2.5em; }
+  main h1 {
+    font-size: 2em; }
+  main h2 {
+    display: block;
+    margin-bottom: 1em;
+    padding-bottom: 0.2em;
+    border-bottom: 0.2em solid #000;
+    text-transform: uppercase; }
+  main h3, main h4 {
+    color: #008CFF; }
+  main div, main article, main li {
+    color: #6D6D6D; }
+  main article {
+    margin-bottom: 0.7em;
+    line-height: 1.5em; }
+  main .fa {
+    margin-right: 0.5em; }
+  main .fa.fa-code {
+    color: #008CFF; }
+
+ul#contacts {
+  margin-bottom: 0;
+  padding: 1em 1.5em; }
+
+ul#contacts li, ul#tech-skills-list li, ul#lang-list li {
+  font-weight: bold;
+  margin-bottom: 1em; }
+
+ul#lang-list li .progress-bar {
+  background-image: none; }
+
+ul#strenghts-list {
+  margin-bottom: 1em; }
+  ul#strenghts-list li {
+    margin-bottom: 0.5em; }
+
+#profile-pic {
+  display: block;
+  margin: 0 auto;
+  height: 10em;
+  width: 10em;
+  -webkit-box-shadow: 0 0 0.6em 0 rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0 0 0.6em 0 rgba(50, 50, 50, 0.75);
+  box-shadow: 0 0 0.6em 0 rgba(50, 50, 50, 0.75); }
+
+/*# sourceMappingURL=resume.css.map */

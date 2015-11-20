@@ -1,0 +1,49 @@
+.slider
+    background-color: #e5e9eb
+    height: 0.7em
+    margin: 0.5em 0
+    position: relative
+
+    .progress-bar
+        animation-duration: 3s
+        background-color: #008CFF
+        background-image: url(../images/slider.png)
+        background-size: cover
+        height: 100%
+        position: relative
+
+        &.progress-80
+            animation-name: progress-80
+            width: 80%
+
+        &.progress-90
+            animation-name: progress-90
+            width: 90%
+
+        &.progress-100
+            animation-name: progress-100
+            width: 100%
+
+/* ANIMATIONS */
+@keyframes progress-80
+    0%
+        width: 0
+
+    100%
+        width: 80%
+
+
+@keyframes progress-90
+    0%
+        width: 0
+
+    100%
+        width: 90%
+
+
+@keyframes progress-100
+    0%
+        width: 0
+
+    100%
+        width: 100%
